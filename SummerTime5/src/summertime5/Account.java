@@ -47,5 +47,9 @@ public class Account {
         return ("Account :: Owner : " + owner + "\t Balance    " + balance);
         
     }
+    public Account clone(){
+        Account newOne = new Account(owner,balance);
+                return newOne;
+    }
 
 }
